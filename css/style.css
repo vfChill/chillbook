@@ -33,6 +33,7 @@ md-card .title{
   display: flex;
 }
 md-card .subTitle{
+    font-size: 0.7em;
   display: flex;
 }
 md-card .link{
