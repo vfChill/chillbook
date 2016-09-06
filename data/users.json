@@ -1,0 +1,5 @@
+[
+			{"firstName":"Victor", "lastName":"Figueira", "depCode":"IS", "department":"Information Systems", jobTitle:"Web Developer", ext:"7485", profilePhote:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAVZAAAAJDA5ZDdhNzIwLTAwNmQtNGE1Ni1hMzZjLTYwM2VlZjNlMmY5OA.jpg"},
+    	{"firstName":"Colm", "lastName":"Daly", "depCode":"IS", "department":"Information Systems", jobTitle:"UAT Lead", ext:"2525", profilePhote:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAR_AAAAJGVkYmMyMzk3LWFkZTgtNGZjNi04ZWQ3LTNhM2FiNzk2MjViNA.jpg"},
+    	{"firstName":"Declan", "lastName":"Foy", "depCode":"IS", "department":"Information Systems", jobTitle:"Web Developer", ext:"0687", profilePhote:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/005/044/268/268eaf2.jpg"}
+		]
