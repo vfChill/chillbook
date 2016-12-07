@@ -1,74 +1,122 @@
 <!DOCTYPE html>
 <html >
   <head>
+<!--      Meta tags-->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
     <title>Angular Material - Grid of card</title>
     
     
-    
-    <link rel='stylesheet prefetch' href='https://gitcdn.xyz/repo/angular/bower-material/v0.10.1-rc4/angular-material.css'>
-
+<!--    Angular Material CSS-->
+        <link rel='stylesheet prefetch' href='https://gitcdn.xyz/repo/angular/bower-material/v0.10.1-rc4/angular-material.css'>
+<!--      Custom css-->
         <link rel="stylesheet" href="css/style.css">
-		 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-aria.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.min.js'></script>
-<script src='https://gitcdn.xyz/repo/angular/bower-material/v0.10.1-rc4/angular-material.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/assets-cache.js'></script>
-
+<!--      Angular libs/Js-->
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.min.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-aria.min.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.min.js'></script>
+        <script src='https://gitcdn.xyz/repo/angular/bower-material/v0.10.1-rc4/angular-material.js'></script>
+        <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/assets-cache.js'></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script>
+     
+<!--Custom scripts-->
         <script src="js/index.js"></script>
-
-    
-    
-    
+      <script src="https://use.fontawesome.com/bced69b38b.js"></script>
   </head>
 
   <body>
 
     <div ng-app="MyApp" class="gridListdemoBasicUsage" ng-controller="AppCtrl as appCtrl">
-
-   <md-toolbar md-theme="dark-purple">
-      <div class="md-toolbar-tools">
-        <h2 class="md-flex title">{{chillbook.title}}</h2>
-      </div>
-    </md-toolbar>
+<!--        Header-->
+       <md-toolbar md-theme="dark-purple">
+          <div class="md-toolbar-tools">
+            <h2 class="md-flex title">{{chillbook.title}}</h2>
+            <span flex></span>
+    <div class="group">      
+      <input ng-model="searchFish">
+      <span class="highlight"></span>
+      
+      <label><ng-md-icon icon="search" style="fill: white" size="24"></ng-md-icon></label></label>
+    </div>
+<!--
+              <md-input-container class="md-block searchBox" md-no-float>
+                <label class="searchLabel">
+                    <ng-md-icon icon="search" style="fill: white" size="24"></ng-md-icon>
+                    Search</label>
+                <input ng-model="searchFish">
+              </md-input-container>
+-->
+             
+          </div>
+           
+        </md-toolbar>
+       
+<!--
+        <md-toolbar ng-show="!showSearch" md-theme="dark-purple">
+        <div class="md-toolbar-tools">
+          <md-button ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
+            <ng-md-icon icon="menu"></ng-md-icon>
+          </md-button>
+          <h3 class="md-flex title">
+            {{chillbook.title}}
+          </h3>
+          <span flex></span>
+          <md-button aria-label="Search" ng-click="showSearch = !showSearch">
+           
+            
+          </md-button>
+          <md-button aria-label="Open Settings" ng-click="showListBottomSheet($event)">
+            <ng-md-icon icon="more_vert"></ng-md-icon>
+          </md-button>
+            </div>
+            </md-toolbar>
+        
+        <md-toolbar class="md-hue-1" ng-show="showSearch">
+        <div class="md-toolbar-tools">
+          <md-button ng-click="showSearch = !showSearch" aria-label="Back">
+            
+           
+          </md-button>
+          
+          <md-input-container md-theme="input" flex>
+            <label>&nbsp;</label>
+            <input ng-model="searchFish" placeholder="enter search">
+          </md-input-container>
+          <md-button aria-label="Search" ng-click="showSearch = !showSearch">
+            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+          </md-button>
+          <md-button aria-label="Open Settings" ng-click="showListBottomSheet($event)">
+            <ng-md-icon icon="more_vert"></ng-md-icon>
+          </md-button>
+        </div>
+       
+      </md-toolbar>
+-->
 <!--
         <p>Data : {{content}}</p>
         <p>Status : {{statuscode}}</p>
         <p>StatusText : {{statustext}}</p>
 -->
 			
-  <div class='md-padding' layout="row" layout-wrap  layout-align="center center">
-		
-        <md-card md-theme="light-purple" ng-repeat="user in users">
+        <div class='md-padding'  layout="row" layout-wrap  layout-align="center center">
+<!--		| filter:searchFish-->
+            <md-card md-theme="light-purple" ng-repeat="user in users | orderBy:firstName | filter:searchFish" ng-click="doGreeting(user.firstName)">
 				
 <!--          <img src="http://placehold.it/80x80" class="md-card-image" alt="user avatar">-->
-					<img src="{{user.profilePhote}}" class="md-card-image" alt="user avatar">
-          <md-card-content>
-            <span class="title">{{user.firstName + " " + user.lastName}}</span>
-            <span class="subTitle">{{user.jobTitle}}</span>
-						<a href="#" class="link">ext: {{user.ext}}</a>
-          </md-card-content>
-					
-					<md-card-actions  layout="column"  layout-align="center center">
-						
-						<md-button class="{{user.depCode}} departmentButton" >{{user.department}}</md-button>
-			
-            </md-card-actions>
-						
-					</md-card>
-			
+                <img src="{{user.profilePhote}}" class="md-card-image" alt="user avatar">
+                <md-card-content>
+                    <span class="title">{{user.firstName + " " + user.lastName}}</span>
+                    <span class="subTitle">{{user.jobTitle}}</span>
+                    <a href="#" class="link">ext: {{user.ext}}</a>
+                </md-card-content>
+                <md-card-actions  layout="column"  layout-align="center center">
+                    <md-button class="{{user.depCode}} departmentButton" >{{user.department}}</md-button>
+                </md-card-actions>		
+            </md-card>
           </div>
-        
-      </div>
-    </div>
-  </div>
-</div>
-   
-
-    
-    
-    
+      </div>    
   </body>
 </html>

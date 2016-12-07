@@ -1,4 +1,4 @@
-angular.module('MyApp')
+angular.module('MyApp',['ngMaterial', 'ngMessages','ngMdIcons'])
     .controller('AppCtrl', function($scope, $http) {
 	
 		$http.get('data/users.json')
@@ -10,7 +10,12 @@ angular.module('MyApp')
         });
 	   $scope.chillbook = {
             title: 'ChillBook'         
-        }   
+        } 
+       $scope.doGreeting = function(greeting) {
+        console.log(greeting);
+      };
+    $scope.searchFish = "";
+       
   })
     .config(function($mdThemingProvider) {
 						$mdThemingProvider.theme('dark-purple', 'default').primaryPalette('deep-purple').dark();

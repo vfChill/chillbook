@@ -34,6 +34,111 @@
                "jobTitle":"Head of Applications and Development ", 
                "ext":"4678", 
                 "profilePhote":"https://media.licdn.com/media/AAEAAQAAAAAAAAKgAAAAJGQ0YWRlZTBlLTQ1NTktNDIwYi05NjQ4LTkzMWUwNTViMzIzMQ.jpg"
+           },
+            {
+               "firstName":"John", 
+               "lastName":"Riordan", 
+               "depCode":"IS", 
+               "department":"Information Systems", 
+               "jobTitle":"Business Operations & Management Consultant", 
+               "ext":"6478", 
+                "profilePhote":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/1d7/3aa/37e42f5.jpg"
+           },
+            {
+               "firstName":"Fergal", 
+               "lastName":"Lynch", 
+               "depCode":"MK", 
+               "department":"Marketing", 
+               "jobTitle":"Head of Marketing", 
+               "ext":"6478", 
+                "profilePhote":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/20f/25d/0503642.jpg"
+           },
+            {
+               "firstName":"Marta", 
+               "lastName":"Garcia", 
+               "depCode":"MK", 
+               "department":"Marketing", 
+               "jobTitle":"Marketing Analyst Manager", 
+               "ext":"6478", 
+                "profilePhote":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/000/238/056/302566a.jpg"
+           },
+            {
+               "firstName":"Michele", 
+               "lastName":"Groarke", 
+               "depCode":"IS", 
+               "department":"Information Systems", 
+               "jobTitle":"MIS Reporting Analyst", 
+               "ext":"6478", 
+                "profilePhote":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/000/2b4/3e2/1dd6f2d.jpg"
+           },
+            {
+               "firstName":"Padraig", 
+               "lastName":"Lynch", 
+               "depCode":"DI", 
+               "department":"Director", 
+               "jobTitle":"Director, Compilance & training", 
+               "ext":"7652", 
+                "profilePhote":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/000/1dc/102/1636832.jpg"
+           },
+            {
+               "firstName":"David", 
+               "lastName":"Skelly", 
+               "depCode":"PP", 
+               "department":"Product & Pricing", 
+               "jobTitle":"Head of products & Pricing", 
+               "ext":"1269", 
+                "profilePhote":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/2a6/33c/1173f96.jpg"
+           },
+            {
+               "firstName":"Carol", 
+               "lastName":"Keane", 
+               "depCode":"FN", 
+               "department":"Finance", 
+               "jobTitle":"Financial Controller ", 
+               "ext":"1269", 
+                "profilePhote":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/005/031/18f/349ce6f.jpg"
+           },
+            {
+               "firstName":"Zara", 
+               "lastName":"Gallagher", 
+               "depCode":"FN", 
+               "department":"Finance", 
+               "jobTitle":"Credit Controller", 
+               "ext":"0356", 
+                "profilePhote":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/005/093/123/11f4a04.jpg"
+           },
+            {
+               "firstName":"Lynn", 
+               "lastName":"Fagan", 
+               "depCode":"TR", 
+               "department":"Training", 
+               "jobTitle":"Insurance Training manage", 
+               "ext":"1254", 
+                "profilePhote":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAETAAAAJDY3OTVhZmYwLTI1Y2QtNGU5Yi1iMzZiLTA4NWIxNTI4ZjkyYQ.jpg"
+           },
+            {
+               "firstName":"Mary", 
+               "lastName":"Moore", 
+               "depCode":"SA", 
+               "department":"Sales", 
+               "jobTitle":"Sales", 
+               "ext":"0987",  "profilePhote":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAghAAAAJDU4NzNkM2M4LTcyMDQtNDMwNi04ZDhhLTBjZmZkMTA2ZGI0Ng.jpg"
+           },
+            {
+               "firstName":"Ciara", 
+               "lastName":"Kirby", 
+               "depCode":"SA", 
+               "department":"Sales", 
+               "jobTitle":"Sales Representative", 
+               "ext":"0987",  "profilePhote":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAlEAAAAJGNkODRhYTQ4LTMzOGUtNDBjYy04NjMxLTQxMWNlM2JjZjNjNA.jpg"
+           },
+            {
+               "firstName":"Colm", 
+               "lastName":"O'Toole", 
+               "depCode":"SA", 
+               "department":"Sales", 
+               "jobTitle":"Sales Executive", 
+               "ext":"0987",  "profilePhote":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAfiAAAAJDdjMjE4NzAzLTljNjMtNDRiOC1hMmZkLTU4NTlhN2UxMDM4YQ.jpg"
            }
         ]
 }
